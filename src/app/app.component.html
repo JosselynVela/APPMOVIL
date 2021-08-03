@@ -1,0 +1,33 @@
+<ion-app>
+  <!-- INICIO SELECT -->
+  <ion-menu side="start" menuId="first" contentId="main">
+   <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['/home']" >Comunicados</ion-item>
+        <ion-item [routerLink]="['/publicar']" >Publicar</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+  <ion-menu side="end" menuId="second" contentId="main1">
+    <ion-header>
+       <ion-toolbar color="primary">
+       </ion-toolbar>
+     </ion-header>
+   
+     <ion-content>
+       <ion-list>
+         <ion-item [routerLink]="['/login']">Cerrar Sesion</ion-item>
+       </ion-list>
+     </ion-content>
+   </ion-menu>
+   <ion-router-outlet ></ion-router-outlet>
+
+</ion-app>

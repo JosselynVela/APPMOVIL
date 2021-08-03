@@ -1,0 +1,10 @@
+ion-select {
+    width: 50%;
+  
+    justify-content: center;
+  }
+
+  ion-select::part(text) {
+    color: #545ca7;
+  }
+ 
