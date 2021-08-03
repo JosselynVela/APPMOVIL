@@ -3,17 +3,24 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Rout
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 import { take, map } from 'rxjs/operators';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase';
+import { isNullOrUndefined } from 'util';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
-  constructor(private authSvc: AuthService, private router: Router) {}
+  constructor(private authSvc: AuthService, private router: Router,private AFauth : AngularFireAuth) {}
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return false; /*this.authSvc.user$.pipe(
+    
+    
+   
+    
+    return this.authSvc.user$.pipe(
       take(2),
       map((user) => {
         if (user) {
@@ -23,6 +30,7 @@ export class AuthGuard implements CanActivate {
           return false;
         }
       })
-    );*/
-  }
+    )
+  
+}
 }

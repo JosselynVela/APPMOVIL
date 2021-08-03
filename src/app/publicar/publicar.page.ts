@@ -6,7 +6,7 @@ import { MenuController } from '@ionic/angular';
   templateUrl: './publicar.page.html',
   styleUrls: ['./publicar.page.scss'],
 })
-export class PublicarPage implements OnInit {
+export class PublicarPage  {
 
   constructor(private menu: MenuController) { }
 

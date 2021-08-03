@@ -16,6 +16,7 @@ export class LoginPage {
     try {
       const user = await this.authSvc.login(email.value, password.value);
       if (user) {
+        console.log('Usuario logeado');
         const isVerified = this.authSvc.isEmailVerified(user);
         this.redirectUser(isVerified);
       }
