@@ -1,0 +1,28 @@
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 50%;
+  }
+
+  ion-toolbar{
+    --background: #7ed957; 
+    }
+  ion-item{
+      border-radius: 7%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+  }
+
+  ion-button{
+    --background: #7ed957;
+  }
+  p{
+    text-align: center;
+    font-weight: bold;
+  }
+  p:hover{
+    Color:  #7ed957;
+    }

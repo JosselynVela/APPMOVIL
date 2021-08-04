@@ -1,0 +1,35 @@
+ion-toolbar{
+    --background: #7ed957; 
+  
+  }
+
+  ion-button{
+    --background: #7ed957;
+    margin-top:15%;
+    margin-left: 2%;
+    margin-right: 5%;
+    font-size: small;
+    border-radius: 20%;
+  }
+  div{
+      margin-top: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: justify;
+  }
+
+  .icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 80%;
+  }
+
+  p{
+    text-align: end;
+    font-weight: bold;
+  }
+  p:hover{
+    Color:  #7ed957;
+    }

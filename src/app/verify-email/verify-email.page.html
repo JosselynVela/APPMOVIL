@@ -7,6 +7,8 @@
 </ion-header>
 
 <ion-content *ngIf="user$ | async as user">
+  <div>
+    <img class="icon" src="assets/icon/visto.png" alt="">
   <ion-row>
     <ion-col>
       <center>
@@ -20,21 +22,18 @@
   <ion-row>
     <ion-col>
       <center>
-      <ion-button type="submit" color="warning"  (click)="onSendEmail()"
-        >Reenviar correo electrónico de verificación</ion-button
-      >
-      
+      <ion-button type="submit" (click)="onSendEmail()"
+        >Reenviar correo de verificación</ion-button>
+      </center>
       <b>
-      <br><br><br>
+      <br>
        <p>  
        <a routerLink="/login" style="color:black">Iniciar Sesión? </a>           
       </p>   
       </b>
-    </center>
+    
       
     </ion-col>
-    
-    
-
   </ion-row>
+</div>
 </ion-content>

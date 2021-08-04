@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: 'publicar',
     loadChildren: () => import('./publicar/publicar.module').then( m => m.PublicarPageModule),
-    canActivate: [AuthGuard],
+   // canActivate: [AuthGuard],
   },
   {
     path: 'login',

@@ -1,33 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <center>
-
-    <ion-title>Iniciar Sesion</ion-title>
-  </center>
+<ion-header >
+  <ion-toolbar >
+      <ion-title size="large">Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  
+  <div class="login-form ion-padding">
+  <br>
   <form>
+    <img class="icon" src="assets/icon/avatar.png" alt="">
+    <br>
     <ion-item lines="full">
-      <ion-label position="floating">Correo Electrónico</ion-label>
-      <ion-input type="text" #email required></ion-input>
-    </ion-item>
-    <ion-item lines="full">
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" #password required></ion-input>
+      <ion-label  position="floating">Correo Electrónico</ion-label>   
+      <ion-input type="text" #email required></ion-input><br>
+    </ion-item><br>
+    <ion-item lines="full">    
+        <ion-label position="floating">Contraseña</ion-label>
+      <ion-input  type="password" #password required></ion-input>
     </ion-item>
     <ion-row>
-      <br>
+      
       <ion-col>
-        <ion-button type="submit" color="secondary" (click)="onLogin(email, password)" expand="block">Iniciar Sesión</ion-button>
+        <br><br>
+        <ion-button type="submit"  (click)="onLogin(email, password)" expand="block">Iniciar Sesión</ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <p class="ion-text-end">
-          <a routerLink="/forgot-password">¿Se te olvidó tu contraseña? </a>
-        </p>
+        <ion-text color="dark">
+          <p routerLink="/forgot-password" >Se te olvido tu Contraseña?</p>
+        </ion-text>
+        
       </ion-col>
     </ion-row>
     <b>
@@ -46,9 +50,11 @@
   </form>
   <ion-row>
     <ion-col>
-      <p class="ion-text-end">
-        <a routerLink="/register">Crear una cuenta </a>
-      </p>
+      <ion-text color="dark">
+        <p routerLink="/register" >Crear una cuenta</p>
+      </ion-text>
+      
     </ion-col>
   </ion-row>
+</div>
 </ion-content>

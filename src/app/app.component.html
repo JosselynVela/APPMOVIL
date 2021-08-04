@@ -2,12 +2,15 @@
   <!-- INICIO SELECT -->
   <ion-menu side="start" menuId="first" contentId="main">
    <ion-header>
-      <ion-toolbar color="primary">
+      <ion-toolbar >
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
   
     <ion-content>
+      
+      <img class="icon" src="assets/icon/bus.png" alt="">
+      <br>
       <ion-list>
         <ion-item [routerLink]="['/home']" >Comunicados</ion-item>
         <ion-item [routerLink]="['/publicar']" >Publicar</ion-item>
@@ -18,11 +21,12 @@
 
   <ion-menu side="end" menuId="second" contentId="main1">
     <ion-header>
-       <ion-toolbar color="primary">
+       <ion-toolbar >
        </ion-toolbar>
      </ion-header>
    
      <ion-content>
+      <img class="icon" src="assets/icon/candado.png" alt="">
        <ion-list>
          <ion-item (click)="onLogout() ">Cerrar Sesion</ion-item>
        </ion-list>

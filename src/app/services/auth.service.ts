@@ -75,13 +75,13 @@ export class AuthService {
     return user.emailVerified === true ? true : false;
   }
 
-  /*async logout(): Promise<void> {
+  async logout(): Promise<void> {
     try {
       await this.afAuth.signOut();
     } catch (error) {
       console.log('Error->', error);
     }
-  }*/ 
+  }
 
   private updateUserData(user: User) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);

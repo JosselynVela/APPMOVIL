@@ -2,5 +2,51 @@
   display: block;
   text-align: center;
 }
+.icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 80%;
+}
+ion-toolbar{
+  --background: #7ed957; 
 
+}
+
+ion-title{
+  color: rgba(32, 30, 30, 0.637);
+  font-size: 25px;
+  text-align:center;
+  font-weight: bold;
+}
+
+
+ion-content{
+
+  ion-button{
+    --background: #7ed957;
+  }
+  p{
+    text-align: end;
+    font-weight: bold;
+  }
+  p:hover{
+    Color:  #7ed957;
+    }
+
+  ion-item{
+    top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15%;
+    
+    
+  }
+  ion-label{
+    text-align: start;
+  }
+  
+
+}
 

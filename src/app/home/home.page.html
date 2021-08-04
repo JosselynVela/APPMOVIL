@@ -8,22 +8,19 @@
     <ion-buttons slot="end">
       <ion-icon  (click)="openMenu()" style="font-size: 40px;" name="person-circle"></ion-icon>
     </ion-buttons>
-
-    <center>
+     
     <ion-title>Comunicados</ion-title>
-  </center>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
- 
+  <div>
 
   <!-- INICIO SELECT -->
  
   <ion-item>
     <ion-label>Ruta</ion-label>
-      <ion-select placeholder="Seleccione uno ">
+      <ion-select interface="popover" class="custom-options" placeholder="Seleccione uno ">
       <ion-select-option value="f">Ruta 1</ion-select-option>
       <ion-select-option value="m">Ruta 2</ion-select-option>
     </ion-select>
@@ -76,6 +73,6 @@
   <br>
  
 
-  
+</div>
 
 </ion-content>
